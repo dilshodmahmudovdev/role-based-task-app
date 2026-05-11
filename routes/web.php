@@ -1,6 +1,14 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
+
+
+Route::middleware('guest')->group(function () {
+    Route::get('/login', [UserController::class, 'index'])->name('login');
+    Route::post('/login', [UserController::class, 'login']);
+});
+
 
 Route::get('/', function () {
     return view('pages.home.index');

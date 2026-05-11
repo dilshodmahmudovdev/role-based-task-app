@@ -1,0 +1,17 @@
+.my-bg-dark{
+    background: #2c3034;
+}
+.input{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: transparent;
+    border: 1px solid #ffffff33;
+    color: #ffffff;
+}
+.input:focus{
+    outline: 1px solid #b4b4b4;
+    border: 1px solid transparent;
+}
